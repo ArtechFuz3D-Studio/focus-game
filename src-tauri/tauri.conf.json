@@ -7,7 +7,7 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "point-shooter-tauri",
+    "productName": "point-shooter-focus-game",
     "version": "0.1.0"
   },
   "tauri": {
