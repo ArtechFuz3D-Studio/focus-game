@@ -217,13 +217,7 @@ footer,
   z-index: 100;
 }
 
-@font-face {
-  font-family: "Orbitron";
-  src: url("/fonts/Orbitron-VariableFont_wght.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-/* Reset some default styles ?this is the correct css */
+
 body,
 h1,
 h2,
@@ -252,7 +246,7 @@ header {
   top: 0;
   display: flex;
   justify-content: center;
-  z-index: 101;
+  z-index: 1010;
 }
 nav {
   display: flex;

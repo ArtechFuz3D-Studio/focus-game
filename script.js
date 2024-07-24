@@ -189,9 +189,9 @@ window.addEventListener("load", function () {
 
   function drawScore() {
     ctx.fillStyle = "black";
-    ctx.fillText("Score: " + score, 50, 75);
+    ctx.fillText("Score: " + score, 40, 150);
     ctx.fillStyle = "white";
-    ctx.fillText("Score: " + score, 53, 78);
+    ctx.fillText("Score: " + score, 42, 148);
   }
 
   function drawGameOver() {

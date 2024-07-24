@@ -27,8 +27,8 @@
     },
     "bundle": {
       "active": true,
-      "category": "DeveloperTool",
-      "copyright": "",
+      "category": "Games",
+      "copyright": "ArtechFuz3D",
       "deb": {
         "depends": []
       },
