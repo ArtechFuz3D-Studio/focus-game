@@ -11,7 +11,23 @@
     <link rel="stylesheet" href="../../../../../styles/global.css" />
 </head>
 <body>
-
+  <div data-tauri-drag-region class="titlebar">
+    <div class="titlebar-button" id="titlebar-minimize">
+      <img
+        src="https://api.iconify.design/mdi:window-minimize.svg"
+        alt="minimize"
+      />
+    </div>
+    <div class="titlebar-button" id="titlebar-maximize">
+      <img
+        src="https://api.iconify.design/mdi:window-maximize.svg"
+        alt="maximize"
+      />
+    </div>
+    <div class="titlebar-button" id="titlebar-close">
+      <img src="https://api.iconify.design/mdi:close.svg" alt="close" />
+    </div>
+  </div>
     <header>
         <nav>
           <div class="burger-icon" id="burger-icon">&#9776;</div>
@@ -27,7 +43,7 @@
         <div class="sidebar-content">
           <h1>Point & Shoot Focus Game</h1>
           <!-- <h2>NOTICE: THIS LESSON DOES NOT WORK WHEN DEPLOYED</h2> -->
-          <p>Increase Your Brain Ractivity with Awareness and Focus</p>
+          <p>Increase Your Brain Activity with Awareness and Focus Games</p>
           <p>Eliminate all the enemies before they cross the sky!</p>
           <hr/>
           <q
@@ -43,14 +59,14 @@
               >Bevouliin</a
             ></q
           >
-          <!-- <p>
-              <img
-                id="spriteSheet"
-                src="../../../../public/shadow_dog.png"
-                alt="spritesheet"
-              />
-            </p> -->
+          <hr/>
+
         </div>
+        <div class="download-buttons">
+          <a href="path-to-windows-download" class="button" download>Win</a>
+          <a href="path-to-mac-download" class="button" download>Mac</a>
+          <a href="path-to-linux-download" class="button" download>Linux</a>
+      </div>
         <footer>
           <p class="sidefoot">&copy; 2024 ArtechFuz3D. All rights reserved.</p>
         </footer>

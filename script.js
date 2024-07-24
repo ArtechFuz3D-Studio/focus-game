@@ -1,10 +1,20 @@
 /**
  * @type {HTMLCanvasElement}
  */
+
 import raven from '@assets/raven.png'
 import roll from '@assets/roll.wav'
 import boom from '@assets/boom.png'
-
+import { appWindow } from '@tauri-apps/api/window'
+document
+  .getElementById('titlebar-minimize')
+  .addEventListener('click', () => appWindow.minimize())
+document
+  .getElementById('titlebar-maximize')
+  .addEventListener('click', () => appWindow.toggleMaximize())
+document
+  .getElementById('titlebar-close')
+  .addEventListener('click', () => appWindow.close())
 window.addEventListener("load", function () {
   const canvas = document.getElementById("canvas1");
   const ctx = canvas.getContext("2d", {
@@ -22,7 +32,7 @@ window.addEventListener("load", function () {
 
   let score = 0;
   let gameOver = false;
-  ctx.font = "50px Alata";
+  ctx.font = "50px Orbitron";
 
   let timeToNextRaven = 0;
   let ravenInterval = 600;

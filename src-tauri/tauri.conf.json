@@ -12,6 +12,17 @@
   },
   "tauri": {
     "allowlist": {
+      "window": {
+        "all": false,
+        "close": true,
+        "hide": true,
+        "show": true,
+        "maximize": true,
+        "minimize": true,
+        "unmaximize": true,
+        "unminimize": true,
+        "startDragging": true
+      },
       "all": false
     },
     "bundle": {
@@ -53,13 +64,20 @@
     "updater": {
       "active": false
     },
+
     "windows": [
+      
       {
         "fullscreen": false,
-        "height": 600,
+        "height": 900,
         "resizable": true,
-        "title": "point-shooter-tauri",
-        "width": 800
+        "title": "point-shooter-focus-game",
+        "width": 1200,
+        "decorations": true,
+        "closable": true,
+        "maximizable": true,
+        "minimizable": true
+
       }
     ]
   }
