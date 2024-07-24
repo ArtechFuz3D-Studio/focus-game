@@ -1,0 +1,87 @@
+<!-- type html:5 to generate boiler -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 05 - Point & Shooter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../../../../styles/styles.css" />
+    <link rel="stylesheet" href="../../../../../styles/global.css" />
+</head>
+<body>
+
+    <header>
+        <nav>
+          <div class="burger-icon" id="burger-icon">&#9776;</div>
+          <ul id="nav-menu">
+            <li><a href="/index.html">Restart</a></li>
+            <!-- <li><a href="/contact.html">Contact</a></li> -->
+
+          </ul>
+        </nav>
+      </header>
+        <!-- Styles from global -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+          <h1>Point & Shoot Game</h1>
+          <!-- <h2>NOTICE: THIS LESSON DOES NOT WORK WHEN DEPLOYED</h2> -->
+          <p>Increase Your Brain Ractivity with Awareness and Focus</p>
+          <p>Eliminate all the enemies before they cross the sky!</p>
+          <hr/>
+          <q
+            >Audio by
+            <a href="https://portfolio.artechfuz3d.xyz"
+              >Me</a
+            ></q
+          >
+  <br/>
+          <q
+            >Art courtesy of
+            <a href="https://bevouliin.com/category/free_game_asset/"
+              >Bevouliin</a
+            ></q
+          >
+          <!-- <p>
+              <img
+                id="spriteSheet"
+                src="../../../../public/shadow_dog.png"
+                alt="spritesheet"
+              />
+            </p> -->
+        </div>
+        <footer>
+          <p class="sidefoot">&copy; 2024 ArtechFuz3D. All rights reserved.</p>
+        </footer>
+      </div>
+      <div class="edible-content" id="main-content">
+        <div class="hamburger-icon" id="hamburger">&#9776;</div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const hamburger = document.getElementById("burger-icon");
+          const navMenu = document.getElementById("nav-menu");
+  
+          hamburger.addEventListener("click", function () {
+            navMenu.classList.toggle("active");
+          });
+        });
+      </script>
+      <script>
+        document
+          .getElementById("hamburger")
+          .addEventListener("click", function () {
+            var sidebar = document.getElementById("sidebar");
+            var mainContent = document.getElementById("main-content");
+            sidebar.classList.toggle("open");
+            mainContent.classList.toggle("open");
+          });
+      </script>
+    <canvas id="collisionCanvas" ></canvas>
+    <canvas id="canvas1"></canvas>
+
+    <script type="module" src="script.js" ></script>
+    
+</body>
+</html>
